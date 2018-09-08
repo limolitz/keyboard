@@ -67,6 +67,14 @@ xkb_symbols "euro" {
     include "level3(ralt_switch)"
 };
 
+partial alphanumeric_keys
+xkb_symbols "wasmitnetzen" {
+
+    include "us(euro)"
+    name[Group1]= "English (US, Euro on 5, extended by wasmitnetzen)"
+
+    key <AD09> {	[	  o,	O,	 odiaeresis,	Odiaeresis]	};
+};
 
 partial alphanumeric_keys
 xkb_symbols "ibm238l" {
