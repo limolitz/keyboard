@@ -69,11 +69,20 @@ xkb_symbols "euro" {
 
 partial alphanumeric_keys
 xkb_symbols "wasmitnetzen" {
-
+    
     include "us(euro)"
-    name[Group1]= "English (US, Euro on 5, extended by wasmitnetzen)"
-
+    name[Group1]= "English (US, Euro on 5, extended by wasmitnetzen)";
+    
+    key <AD06> {	[	  z,	Z 		]	};
+    key <AB01> {	[	  y,	Y		]	};
+    
+    key <AC01> {	[	  a,	A, 	adiaeresis,	Adiaeresis]	};
+    key <AD07> {	[	  u,	U,	udiaeresis,	Udiaeresis]	};
     key <AD09> {	[	  o,	O,	 odiaeresis,	Odiaeresis]	};
+    key <AB08> {	[     comma,	less,	doublelowquotemark	]	};
+    key <AB09> {	[    period,	greater,	leftdoublequotemark	]	};
+    key <AC02> {	[	  s,	S, ssharp,  0x1001E9E]	};
+    
 };
 
 partial alphanumeric_keys
