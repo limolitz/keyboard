@@ -67,22 +67,35 @@ xkb_symbols "euro" {
     include "level3(ralt_switch)"
 };
 
+// modified by wasmitnetzen
+// Added German and some Swedish letters to sensible locations, switched y and z
+// Added German quote marks
+// Added degree, Euro, mu, thin space (U2009), nobreakspace
+// Added dead_abovering
+// TODO: add section, aring, Aring
 partial alphanumeric_keys
 xkb_symbols "wasmitnetzen" {
-    
+
     include "us(euro)"
     name[Group1]= "English (US, Euro on 5, extended by wasmitnetzen)";
-    
-    key <AD06> {	[	  z,	Z 		]	};
-    key <AB01> {	[	  y,	Y		]	};
-    
+
+    key <AE04> {	[	  4,	dollar, 	section	]	};
+    key <AE06> {	[	6,	asciicircum,	degree,	dead_abovering]	};
+
+    key <AB01> {	[	y,	Y		]	};
+    key <AB07> {	[	m,	M,            mu,               mu ] };
+    key <AB08> {	[	comma,	less,	doublelowquotemark	]	};
+    key <AB09> {	[	period,	greater,	leftdoublequotemark	]	};
+
     key <AC01> {	[	  a,	A, 	adiaeresis,	Adiaeresis]	};
+    key <AC02> {	[	  s,	S,	ssharp,	U1E9E]	};
+   
+    key <AD03> {	[	  e,	E,	EuroSign	]	};
+    key <AD06> {	[	  z,	Z 		]	};
     key <AD07> {	[	  u,	U,	udiaeresis,	Udiaeresis]	};
     key <AD09> {	[	  o,	O,	 odiaeresis,	Odiaeresis]	};
-    key <AB08> {	[     comma,	less,	doublelowquotemark	]	};
-    key <AB09> {	[    period,	greater,	leftdoublequotemark	]	};
-    key <AC02> {	[	  s,	S, ssharp,  0x1001E9E]	};
-    
+
+    key <SPCE> { [ space, space, U2009, nobreakspace ] };
 };
 
 partial alphanumeric_keys
