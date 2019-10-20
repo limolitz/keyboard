@@ -8,7 +8,7 @@ On Ubuntu, copy the `us` file to `/usr/share/X11/xkb/symbols/` and `evdev.xml` t
 ## Changes to American layout
 * Switched y and z
 * Extra letters, accessible with Level3 modifier, which is usually RAlt
-  * Added German äÄ, üÜ and German/Swedish öÖ to a, u, and o, respectively
+  * Added German üÜ and German/Swedish äÄ, and öÖ to u, a, and o, respectively
   * Added ßẞ to s
   * Added µ to m
   * Added German quote marks „“ to ,.
