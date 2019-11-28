@@ -89,7 +89,7 @@ xkb_symbols "wasmitnetzen" {
 
     key <AC01> {	[	  a,	A, 	adiaeresis,	Adiaeresis]	};
     key <AC02> {	[	  s,	S,	ssharp,	U1E9E]	};
-   
+
     key <AD03> {	[	  e,	E,	EuroSign	]	};
     key <AD06> {	[	  z,	Z 		]	};
     key <AD07> {	[	  u,	U,	udiaeresis,	Udiaeresis]	};
@@ -98,6 +98,7 @@ xkb_symbols "wasmitnetzen" {
     key <SPCE> { [ space, space, U2009, nobreakspace ] };
     key <PAUS> { [ XF86AudioMute ] };
 };
+
 
 partial alphanumeric_keys
 xkb_symbols "ibm238l" {
@@ -392,7 +393,7 @@ xkb_symbols "dvorak-alt-intl" {
     key <AC03> { [         e,       E,      eacute ] };
     key <AC04> { [         u,       U, ucircumflex ] };
     key <AC05> { [         i,       I, icircumflex ] };
-    key <AC10> { [         s,       S,      ssharp ] };
+    key <AC10> { [         s,       S,      ssharp,            U1E9E ] };
 
     key <AB01> { [ semicolon,   colon, acircumflex ] };
     key <AB02> { [         q,       Q,  odiaeresis,      dead_ogonek ] };
@@ -635,7 +636,7 @@ xkb_symbols "dvp" {
     key <AC07> { [ h,               H,              dead_acute                  ] };
     key <AC08> { [ t,               T,              thorn,           THORN      ] };
     key <AC09> { [ n,               N,              ntilde,          Ntilde     ] };
-    key <AC10> { [ s,               S,              ssharp                      ] };
+    key <AC10> { [ s,               S,              ssharp,          U1E9E      ] };
     key <AC11> { [ minus,           underscore,     hyphen,          endash     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <BKSL> { [ backslash,       bar                                         ] };
 
@@ -805,7 +806,7 @@ xkb_symbols "colemak" {
 
     key <AC01> { [            a,            A,          aacute,           Aacute ] };
     key <AC02> { [            r,            R,      dead_grave,       asciitilde ] };
-    key <AC03> { [            s,            S,          ssharp,       asciitilde ] };
+    key <AC03> { [            s,            S,          ssharp,        0x1001e9e ] };
     key <AC04> { [            t,            T,      dead_acute, dead_doubleacute ] };
     key <AC05> { [            d,            D,  dead_diaeresis,       asciitilde ] };
     key <AC06> { [            h,            H,      dead_caron,       asciitilde ] };
@@ -1063,7 +1064,7 @@ xkb_symbols "olpc" {
    key <AD12> { [bracketright, braceright,  0x1000330,   0x1000330 ] }; // combining tilde below
 
    key <AC01>  { [         a,          A,          ae,               AE ] };
-   key <AC02>  { [         s,          S,      ssharp,        0x1001E9C ] }; // uppercase S sharp
+   key <AC02>  { [         s,          S,      ssharp,        0x1001E9E ] }; // uppercase S sharp
    key <AC03>  { [         d,          D,         eth,              ETH ] };
    key <AC04>  { [         f,          F,       thorn,            THORN ] };
    key <AC06>  { [         h,          H,    sterling,         sterling ] };
@@ -1126,7 +1127,7 @@ xkb_symbols "olpcm" {
    key <AD12> { [bracketright, braceright,  0x1000330,   0x1000330 ] }; // combining tilde below
 
    key <AC01>  { [         a,          A,          ae,               AE ] };
-   key <AC02>  { [         s,          S,      ssharp,        0x1001E9C ] }; // uppercase S sharp
+   key <AC02>  { [         s,          S,      ssharp,        0x1001E9E ] }; // uppercase S sharp
    key <AC03>  { [         d,          D,         eth,              ETH ] };
    key <AC04>  { [         f,          F,       thorn,            THORN ] };
    key <AC06>  { [         h,          H,    sterling,         sterling ] };
