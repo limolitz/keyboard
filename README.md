@@ -3,8 +3,15 @@ Amended US keyboard with German letters and symbols as well as some Swedish lett
 ![Layout](https://github.com/wasmitnetzen/keyboard/raw/master/layout.png "Layout")
 
 ## Installation
-On Ubuntu, copy the `us` file to `/usr/share/X11/xkb/symbols/` and `evdev.xml` to `/usr/share/X11/xkb/rules/`. It is recommended to backup the original files before and also enable another keyboard layout, as a non-functional keyboard makes it kinda hard to login.
 
+Apply the patches to the appropriate files, on Ubuntu, that is
+
+    sudo patch -u -b /usr/share/X11/xkb/rules/evdev.xml -i evdev.xml.patch
+    sudo patch -u -b /usr/share/X11/xkb/symbols/us -i us.patch
+
+The patches currently work on the files coming with Ubuntu 19.04 and 20.04 LTS, but should be easy to adapt to any other version.
+
+Then enable the keyboad in the input settings. It can be found as a variant of the English (US) layout. I would recommended to enable at least one other keyboard layout as well, as a non-functional keyboard makes it kinda hard to login in case of errors.
 
 ## Changes to American layout
 * Switched y and z

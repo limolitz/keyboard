@@ -1,0 +1,15 @@
+--- evdev.xml.org	2020-08-31 11:23:31.891468010 +0200
++++ evdev.xml	2020-07-21 15:11:32.211515409 +0200
+@@ -1362,6 +1362,12 @@
+         </variant>
+         <variant>
+           <configItem>
++            <name>wasmitnetzen</name>
++            <description>English (US, Euro on 5, extended by wasmitnetzen)</description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
+             <name>intl</name>
+             <description>English (US, intl., with dead keys)</description>
+           </configItem>
