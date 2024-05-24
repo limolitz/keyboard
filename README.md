@@ -10,9 +10,14 @@ sudo patch -u -b /usr/share/X11/xkb/rules/evdev.xml -i evdev.xml.patch
 sudo patch -u -b /usr/share/X11/xkb/symbols/us -i us.patch
 ```
 
-The patches currently work on the files coming with Ubuntu 23.04, but should be easy to adapt to any other version. Older versions are available in the git history.
+## Undo
 
-Then enable the keyboad in the input settings. It can be found as a variant of the English (US) layout. I would recommended to enable at least one other keyboard layout as well, as a non-functional keyboard makes it kinda hard to login in case of errors.
+The patches currently work on the files coming with Ubuntu 24.04, but should be easy to adapt to any other version.
+Older versions are available in the git history.
+
+Then enable the keyboad in the input settings. It can be found as a variant of the English (US) layout. I would
+recommend to enable at least one other keyboard layout as well, as a non-functional keyboard makes it kinda hard to 
+login in case of errors.
 
 ## Changes compared to American layout
 * Switched y and z
@@ -26,7 +31,7 @@ Then enable the keyboad in the input settings. It can be found as a variant of t
   * Added degree ° to 6
   * Added dead_abovering ° to CAPS+6
   * Added thin space (U2009), nobreakspace to Space bar
-* Pause is Mute, Ctrl+Pause is keyboard mute
+* Pause is Mute, Ctrl+Pause is microphone mute
 
 ## Updating
 
