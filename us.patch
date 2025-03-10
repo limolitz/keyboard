@@ -1,6 +1,6 @@
---- /usr/share/X11/xkb/symbols/us.orig	2023-02-04 18:31:37.000000000 +0100
-+++ /usr/share/X11/xkb/symbols/us	2023-05-30 22:00:21.714106241 +0200
-@@ -68,6 +68,39 @@
+--- /usr/share/X11/xkb/symbols/us.orig	2024-02-05 02:24:20.000000000 +0100
++++ /usr/share/X11/xkb/symbols/us	2024-05-24 09:58:30.232819468 +0200
+@@ -70,6 +70,37 @@
      include "level3(ralt_switch)"
  };
  
@@ -14,27 +14,25 @@
 +xkb_symbols "wasmitnetzen" {
 +
 +    include "us(euro)"
-+    name[Group1]= "English (US, Euro on 5, extended by wasmitnetzen)";
++    name[Group1]= "English (US, extended by wasmitnetzen)";
 +
-+    key <AE04> {	[	  4,	dollar, 	section	]	};
-+    key <AE06> {	[	6,	asciicircum,	degree,	dead_abovering]	};
++    key <CAPS> { [] };
 +
-+    key <AB01> {	[	y,	Y		]	};
-+    key <AB07> {	[	m,	M,            mu,               mu ] };
-+    key <AB08> {	[	comma,	less,	doublelowquotemark	]	};
-+    key <AB09> {	[	period,	greater,	leftdoublequotemark	]	};
-+
-+    key <AC01> {	[	  a,	A, 	adiaeresis,	Adiaeresis]	};
-+    key <AC02> {	[	  s,	S,	ssharp,	U1E9E]	};
-+
-+    key <AD03> {	[	  e,	E,	EuroSign	]	};
-+    key <AD06> {	[	  z,	Z 		]	};
-+    key <AD07> {	[	  u,	U,	udiaeresis,	Udiaeresis]	};
-+    key <AD09> {	[	  o,	O,	odiaeresis,	Odiaeresis]	};
-+    key <AD10> {	[	  p,	P,	aring,	Aring]	};
-+
-+    key <SPCE> { [ space, space, U2009, nobreakspace ] };
-+    key <PAUS> { [ XF86AudioMute, XF86AudioMicMute ] };
++    key <AE04> { [4,      dollar,      section                ] };
++    key <AE06> { [6,      asciicircum, degree, dead_abovering ] };
++    key <AB01> { [y,      Y                                   ] };
++    key <AB07> { [m,      M,           mu,     mu             ] };
++    key <AB08> { [comma,  less,        doublelowquotemark     ] };
++    key <AB09> { [period, greater,     leftdoublequotemark    ] };
++    key <AC01> { [a,      A,           adiaeresis, Adiaeresis ] };
++    key <AC02> { [s,      S,           ssharp,     U1E9E      ] };
++    key <AD03> { [e,      E,           EuroSign               ] };
++    key <AD06> { [z,      Z                                   ] };
++    key <AD07> { [u,      U,           udiaeresis, Udiaeresis ] };
++    key <AD09> { [o,      O,           odiaeresis, Odiaeresis ] };
++    key <AD10> { [p,      P,           aring,      Aring      ] };
++    key <SPCE> { [space,  space,       U2009,      nobreakspace ] };
++    key <PAUS> { [XF86AudioMute, XF86AudioMicMute ] };
 +};
 +
  
