@@ -1,16 +1,10 @@
-// Added German and some Swedish letters to sensible locations, switched y and z
-// Added German quote marks
-// Added degree, section, Euro, mu, thin space (U2009), nobreakspace
-// Added dead_abovering
-
-partial alphanumeric_keys
-xkb_symbols "custom" {
-
-    include "us(euro)"
+partial alphanumeric_keys modifier_keys
+xkb_symbols "limolitz" {
     name[Group1]= "English (US, extended by limolitz)";
 
-    key <CAPS> { [] };
+    include "us(euro)"
 
+    key <CAPS> { [F24    ] };
     key <AE04> { [4,      dollar,      section                ] };
     key <AE06> { [6,      asciicircum, degree, dead_abovering ] };
     key <AB01> { [y,      Y                                   ] };
