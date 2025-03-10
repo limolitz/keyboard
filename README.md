@@ -31,8 +31,8 @@ Then enable the keyboad in the input settings. It can be found as a variant of t
 ## Updating
 
 ```Bash
-diff -u /usr/share/X11/xkb/rules/evdev.xml* > evdev.xml.patch
-diff -u /usr/share/X11/xkb/symbols/us* > us.patch
+diff -u /usr/share/X11/xkb/rules/evdev.xml.orig /usr/share/X11/xkb/rules/evdev.xml > evdev.xml.patch
+diff -u /usr/share/X11/xkb/symbols/us.orig /usr/share/X11/xkb/symbols/us > us.patch
 ```
 
 ## Links
